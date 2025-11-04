@@ -68,27 +68,18 @@ Esto facilita mantener el sistema modular, extensible y flexible ante nuevas int
 cd backend
 
 # 1. Crear entorno virtual
-# En Windows (PowerShell o Git Bash):
+# En Windows:
 python -m venv .venv
 .venv\Scripts\activate
 
-# En Mac/Linux:
-python3 -m venv .venv
-source .venv/bin/activate
-
 # 2. Instalar dependencias
 pip install fastapi uvicorn pydantic
-
-# O si tienes un archivo requirements.txt
-pip install -r requirements.txt
 
 # 3. Ejecutar el servidor
 uvicorn main:app --reload
 
 # El servidor estará disponible en:
 # http://127.0.0.1:8000
-# Puedes probarlo con Thunder Client, Postman o desde el frontend.
-
 
 # ============================================
 # FRONTEND — React con Vite
