@@ -55,7 +55,73 @@ El patrón **Bridge** desacopla una abstracción (tipos de notificación) de su 
 
 Esto facilita mantener el sistema modular, extensible y flexible ante nuevas integraciones o tecnologías de comunicación.
 
+
 ---
+# Cómo ejecutar el proyecto
+
+---
+
+# BACKEND (API con FastAPI)
+
+El backend está dentro de la carpeta:
+cd backend
+
+---
+
+## 1. Crear entorno virtual
+
+En Windows (PowerShell o Git Bash):
+python -m venv .venv
+
+Activar el entorno:
+.venv\Scripts\activate
+
+Si usas Mac/Linux:
+source .venv/bin/activate
+
+---
+
+## 2. Instalar dependencias
+
+El proyecto usa FastAPI, Uvicorn y Pydantic, así que instala todo con:
+pip install fastapi uvicorn pydantic
+
+Si tienes un archivo requirements.txt, puedes instalar todo con:
+pip install -r requirements.txt
+
+---
+
+## 3. Ejecutar el servidor
+
+Desde la carpeta backend/:
+uvicorn main:app --reload
+
+El servidor se ejecutará en:
+http://127.0.0.1:8000
+
+Puedes probarlo directamente con Thunder Client, Postman o desde el frontend.
+
+---
+
+# FRONTEND (React con Vite)
+
+Ubicación:
+Abre otra terminal y entra en la carpeta del frontend:
+cd ../frontend
+
+---
+
+## 1. Instalar dependencias
+npm install
+
+---
+
+## 2. Ejecutar el proyecto React
+npm run dev
+
+El frontend estará disponible en:
+http://localhost:5173
+
 
 ✍️ **Autor:** *Walfran Martinez y Alexander Amaya*  
 📅 **Proyecto:** Implementación del Patrón Bridge — NotiCorp
