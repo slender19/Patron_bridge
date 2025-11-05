@@ -57,6 +57,14 @@ Esto facilita mantener el sistema modular, extensible y flexible ante nuevas int
 
 ---
 
+## Infografia
+
+![infografia](https://github.com/user-attachments/assets/d1a798af-03fc-4f30-811e-bf06a692865a)
+
+
+---
+
+
 # Cómo ejecutar el proyecto
 
 ```bash
